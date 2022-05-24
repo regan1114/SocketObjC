@@ -36,13 +36,13 @@
     self.priceLabel = [[UILabel alloc]init];
     self.priceLabel.numberOfLines = 0;
     self.priceLabel.lineBreakMode = NSLineBreakByClipping;
-    self.timeLabel.textAlignment = NSTextAlignmentCenter;
+    self.priceLabel.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:self.priceLabel];
     
     self.contentLabel = [[UILabel alloc]init];
     self.contentLabel.numberOfLines = 0;
     self.contentLabel.lineBreakMode = NSLineBreakByClipping;
-    self.timeLabel.textAlignment = NSTextAlignmentLeft;
+    self.contentLabel.textAlignment = NSTextAlignmentLeft;
     [self.contentView addSubview:self.contentLabel];
     
     [self.timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
